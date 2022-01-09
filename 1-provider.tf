@@ -1,5 +1,13 @@
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "3.5.0"
+    }
+  }
+}
+
 provider "google" {
-//  version = "3.5.0"
   credentials = file("ardent-dream-337620-ac612f7b334e.json")
 
   project = "ardent-dream-337620"
